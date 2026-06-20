@@ -86,6 +86,13 @@ footer{
     box-shadow: 0 2px 8px rgba(38, 221, 32, 0.1);
     flex: 1;
 }
+.service-card{
+    transition: 0.3s;
+}
+
+.service-card:hover{
+    transform: translateY(-10px);
+}
 .services-container{
 display:flex;
 gap:20px;
