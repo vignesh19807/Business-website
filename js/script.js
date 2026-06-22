@@ -226,3 +226,22 @@ localStorage.getItem("userName");
 
 document.getElementById("email").value =
 localStorage.getItem("userEmail");
+
+function toggleMenu(){
+
+    let menu =
+    document.getElementById("navMenu");
+
+    if(menu.style.display === "flex"){
+
+        menu.style.display = "none";
+
+    }
+
+    else{
+
+        menu.style.display = "flex";
+
+    }
+
+}
