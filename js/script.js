@@ -245,3 +245,11 @@ function toggleMenu(){
     }
 
 }
+function closeMenu(){
+
+    let menu =
+    document.getElementById("navMenu");
+
+    menu.style.display = "none";
+
+}
