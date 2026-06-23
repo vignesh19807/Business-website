@@ -253,3 +253,25 @@ function closeMenu(){
     menu.style.display = "none";
 
 }
+window.addEventListener("scroll", function(){
+
+    let sections =
+    document.querySelectorAll(".hidden");
+
+    sections.forEach(function(section){
+
+        let sectionTop =
+        section.getBoundingClientRect().top;
+
+        let screenHeight =
+        window.innerHeight;
+
+        if(sectionTop < screenHeight - 100){
+
+            section.classList.add("show");
+
+        }
+
+    });
+
+});

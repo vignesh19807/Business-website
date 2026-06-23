@@ -64,6 +64,15 @@ button{
 button:hover{
     background-color:#1e40af;
 }
+.get-started-btn
+{
+    display:inline-block;
+    background-color:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:5px;
+}
 
 /* Sections */
 
@@ -138,7 +147,7 @@ cursor:pointer;
 .logo img{
   display:flex;
   flex-direction:column;
-  aliogn-items:center;
+  align-items:center;
 }
 nav{
     padding:10px 30px;
@@ -304,4 +313,15 @@ textarea{
     {
         flex-direction: column;
     }
+}
+
+.hidden{
+    opacity:0;
+    transform:translateY(50px);
+    transition:all 0.8s ease;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
 }
