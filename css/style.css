@@ -4,6 +4,8 @@ html{
 body{
     margin:0;
     font-family:Arial, sans-serif;
+    transition:background-color 0.5s ease,
+               color 0.5s ease;
 }
 
 /* Navigation */
@@ -12,7 +14,9 @@ nav{
     background-color:#1e3a8a;
     color:white;
     padding:15px;
-
+    position:sticky;
+    top:0;
+    z-index:1000;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -38,7 +42,11 @@ nav a{
     color:white;
     text-decoration:none;
 }
-
+nav a:hover
+{
+    color:#60a5fa;
+    transition:5.3s;
+}
 /* Hero */
 
 .hero{
@@ -420,4 +428,48 @@ textarea{
 {
     background-color:#2d2d2d;
     color:white;
+}
+.dark-mode .hero
+{
+    background-color:#18181b;
+}
+.dark-mode input,
+.dark-mode textarea
+{
+    background-color:#27272a;
+    color:white;
+    border:1px solid #52525b;
+}
+.dark-mode input::placeholder,
+.dark-mode textarea::placeholder
+{
+    color:#a1a1aa;
+}
+.dark-mode .contact
+{
+    background-color:#111827;
+}
+.dark-mode .stat-card
+{
+    background-color:#1d4ed8;
+}
+.dark-mode nav
+{
+    background-color:#18181b;
+    border-bottom:1px solid #27272a;
+    box-shadow:0 2px 4px rgba(0,0,0,0.1);
+}
+.dark-mode #menuBtn
+{
+    background-color:#1d4ed8;
+}
+
+.dark-mode #themeBtn
+{
+    background-color:#facc15;
+    color:black;
+}
+.dark-mode .logo img
+{
+    border-radius:8px;
 }

@@ -278,4 +278,26 @@ window.addEventListener("scroll", function(){
 function toggleDarkMode()
 {
     document.body.classList.toggle("dark-mode");
+
+    let themeBtn =
+    document.getElementById("themeBtn");
+
+    if(document.body.classList.contains("dark-mode"))
+    {
+        localStorage.setItem("theme", "dark");
+
+        themeBtn.innerHTML = "☀️";
+    }
+    else
+    {
+        localStorage.setItem("theme", "light");
+
+        themeBtn.innerHTML = "🌙";
+    }
+}
+if(localStorage.getItem("theme") === "dark")
+{
+    document.body.classList.add("dark-mode");
+
+    document.getElementById("themeBtn").innerHTML = "☀️";
 }
