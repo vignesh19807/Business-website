@@ -275,3 +275,7 @@ window.addEventListener("scroll", function(){
     });
 
 });
+function toggleDarkMode()
+{
+    document.body.classList.toggle("dark-mode");
+}

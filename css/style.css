@@ -404,3 +404,20 @@ textarea{
     min-width:150px;
     text-align:center;
 }
+.dark-mode
+{
+    background-color:#121212;
+    color:white;
+}
+
+.dark-mode .testimonial-card
+{
+    background-color:#2d2d2d;
+    color:white;
+}
+
+.dark-mode .event-card
+{
+    background-color:#2d2d2d;
+    color:white;
+}
