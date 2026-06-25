@@ -301,3 +301,24 @@ if(localStorage.getItem("theme") === "dark")
 
     document.getElementById("themeBtn").innerHTML = "☀️";
 }
+function animateCounter(id, target)
+{
+    let count = 0;
+
+    let counter = setInterval(function(){
+
+        count++;
+
+        document.getElementById(id).innerHTML = count;
+
+        if(count >= target)
+        {
+            clearInterval(counter);
+            document.getElementById(id).innerHTML = target + "+";
+        }
+
+    }, 30);
+}
+animateCounter("projects", 100);
+animateCounter("clients", 50);
+animateCounter("experience", 10);
