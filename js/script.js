@@ -301,6 +301,7 @@ if(localStorage.getItem("theme") === "dark")
 
     document.getElementById("themeBtn").innerHTML = "☀️";
 }
+let counterStarted = false;
 function animateCounter(id, target)
 {
     let count = 0;
@@ -319,6 +320,24 @@ function animateCounter(id, target)
 
     }, 30);
 }
-animateCounter("projects", 100);
-animateCounter("clients", 50);
-animateCounter("experience", 10);
+window.addEventListener("scroll", function(){
+
+    let statsSection =
+    document.querySelector(".stats");
+
+    let statsTop =
+    statsSection.getBoundingClientRect().top;
+
+    let screenHeight =
+    window.innerHeight;
+
+    if(statsTop < screenHeight - 100 && !counterStarted)
+    {
+        counterStarted = true;
+
+        animateCounter("projects",100);
+        animateCounter("clients",50);
+        animateCounter("experience",10);
+    }
+
+});
