@@ -1,6 +1,33 @@
 html{
     scroll-behavior:smooth;
 }
+section{
+    padding:80px 20px;
+}
+h1
+{
+    font-size:48px;
+    font-weight:700;
+    line-height:1.2;
+}
+
+h2
+{
+    font-size:32px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+p
+{
+    font-size:16px;
+    line-height:1.7;
+    color:#555;
+}
+.dark-mode p
+{
+    color:#d4d4d8;
+}
 body{
     margin:0;
     font-family:Arial, sans-serif;
@@ -51,7 +78,7 @@ nav a:hover
 
 .hero{
     text-align:center;
-    padding:60px 20px;
+    
     background-color:#f4f4f4;
 }
 
@@ -63,14 +90,24 @@ button{
     background-color:#2563eb;
     color:white;
     border:none;
-    padding:10px 20px;
+   
     border-radius:5px;
+    cursor: pointer;
+    font-size:16px;
+    font-weight:600;
 
     transition:0.3s;
+
+    
 }
 button:hover{
     background-color:#1e40af;
+    transform:translateY(-2px);
+    
+    transform:scale(1.05);
 }
+
+
 .get-started-btn
 {
     display:inline-block;
@@ -79,14 +116,13 @@ button:hover{
     text-decoration:none;
     padding:10px 20px;
     border-radius:5px;
+    font-weight:600;
+    transition:0.3s;
 }
 
 /* Sections */
 
-.about,
-.services{
-    padding:40px;
-}
+
 
 /* Footer */
 
@@ -102,19 +138,18 @@ footer{
     margin-bottom:20px;
     border-radius:10px;
 
-    box-shadow: 0 2px 8px rgba(38, 221, 32, 0.1);
+    box-shadow:0 4px 12px rgba(0,0,0,0.12);
     flex: 1;
-}
-.service-card{
-    transition: 0.3s;
-}
 
-.service-card:hover{
-    transform: translateY(-10px);
+    transition: 0.3s;
+      transition:0.3s;
+cursor:pointer;
 }
-.service-card:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  
+.service-card:hover
+{
+    transform:translateY(-8px);
+    box-shadow:0 12px 24px rgba(0,0,0,0.2);
 }
 
 .services-container{
@@ -128,13 +163,7 @@ button:hover{
 button{
     transition:0.3s;
 }
-.service-card{
-    transition:0.3s;
-cursor:pointer;
-}
-.service-card:hover{
-    transform:translateY(-5px);
-}
+
 .hero-content{
     display:flex;
     justify-content:space-between;
@@ -222,7 +251,7 @@ textarea{
     background-color:white;
     padding:20px;
     margin:15px;
-    border-radius:10px;
+    border-radius:12px;
     box-shadow:0 2px 5px rgba(0,0,0,0.2);
 }
 
@@ -275,6 +304,32 @@ textarea{
 
 @media (max-width: 768px)
 {
+    section
+{
+    padding:60px 15px;
+}
+
+h1
+{
+    font-size:36px;
+}
+
+h2
+{
+    font-size:28px;
+}
+
+p
+{
+    font-size:15px;
+}
+
+.stat-card
+{
+    width:100%;
+    max-width:300px;
+    margin:auto;
+}
     nav
     {
         flex-direction: column;
@@ -388,7 +443,7 @@ textarea{
     padding:20px;
     margin:20px auto;
     max-width:600px;
-    border-radius:10px;
+    border-radius:12px;
 
     box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
